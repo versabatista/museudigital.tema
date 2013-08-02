@@ -1,0 +1,2 @@
+graft src/museudigital
+include *.cfg *.rst *.in
