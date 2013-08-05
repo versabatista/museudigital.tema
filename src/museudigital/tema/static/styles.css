@@ -1,0 +1,191 @@
+html {
+    background: #e5e5e5;
+}
+
+body {
+    background: url(./imgs/header-bg.jpg) no-repeat top center;
+    font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    display: table;
+    width: 100%;
+}
+
+li {
+    display: inline;
+}
+
+#visual-portal-wrapper {
+    margin: 0 auto;
+    width: 1080px;
+}
+
+#portal-top {
+    height: 270px;
+}
+
+#portal-searchbox {
+    float: right;
+    margin-top: 10em;
+}
+
+#portal-globalnav {
+    background: #fcd87f;
+    border: 1px solid #ffd241;
+    border-radius: 0.5em;
+    height: 2em;
+    padding-left: 0;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 265px;
+    width: 100%;
+    z-index: 5;
+}
+
+#portal-globalnav li {
+    border-right: 1px solid #ff9900;
+    line-height: 2em;
+    padding: 0.25em 1.75em;
+}
+
+#portal-globalnav li:last-child {
+    border: 0;
+}
+
+#portal-globalnav li a {
+    color: #333;
+    text-decoration: none;
+}
+
+#portal-footer-wrapper {
+    background: #fcfcfc url(./imgs/footer-bg.jpg);
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+    text-align: center;
+}
+
+#portal-siteactions {
+    background: url(./imgs/footer-sprite.png) no-repeat 10px 0;
+    border-left: 1px solid #999;
+    float: left;
+    margin-left: 2em;
+    position: absolute;
+    text-align: left;
+}
+
+#portal-siteactions a,
+#footer-globalnav a {
+    color: #093479;
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#redes-sociais a {
+    background: url(imgs/rs-sprite.gif) 0 0 no-repeat;
+    padding: 0 12px 2px;
+    margin-right: 0.5em;
+}
+
+#redes-sociais .rs-twitter {
+    background-position: -38px 0;
+}
+
+#redes-sociais .rs-facebook {
+    background-position: -84px 0;
+}
+
+#redes-sociais .rs-linkedin {
+    background-position: -119px 0;
+}
+
+#redes-sociais .rs-youtube {
+    background-position: -156px 0;
+}
+
+.searchField {
+    border: 1px solid #d3d3d3;
+    border-radius: 1em 0 0 1em;
+    color: #9f9fa0;
+    line-height: 3em;
+    margin-right: 0;
+    padding-left: 3em;
+    width: 16em;
+}
+
+#footer-searchbox .searchField {
+    width: 21em;
+}
+
+#footer-globalnav {
+    margin: 2em 0 4em;
+}
+
+.searchButton {
+    /*background: #253e7f;*/
+    background: #3984ac; /* Old browsers */
+    background: -moz-linear-gradient(top,  #3984ac 0%, #253e7f 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3984ac), color-stop(100%,#253e7f)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #3984ac 0%,#253e7f 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #3984ac 0%,#253e7f 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #3984ac 0%,#253e7f 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #3984ac 0%,#253e7f 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3984ac', endColorstr='#253e7f',GradientType=0 ); /* IE6-9 */
+    border: 2px solid #2b5192;
+    border-radius: 0 0.5em 0.5em 0;
+    color: #fff;
+    font-weight: bold;
+    line-height: 3em;
+    margin-left: 0;
+    padding: 0 1.5em;
+    text-transform: uppercase;
+}
+
+#footer-globalnav li {
+    margin-right: 1em;
+}
+
+#portal-colophon {
+    background: #fff;
+    clear: both;
+    text-transform: uppercase;
+}
+
+#portal-colophon p {
+    margin-bottom: 0;
+    padding: 1.5em 0 1em;
+    width: 100%;
+}
+
+#portal-colophon a {
+    color: #a9a9a9;
+    text-decoration: none;
+}
+
+#portal-columns {
+    background: #fff;
+}
+
+.portletNavigationTree dd {
+    margin-left: 0;
+}
+
+.portletNavigationTree ul {
+    padding-left: 0;
+}
+
+.portletNavigationTree li,
+#portal-siteactions li {
+    display: block;
+}
+
+.hiddenStructure {
+    background: none;
+    border: 0;
+    display: block;
+    height: 0.1em;
+    margin: -0.1em 0 0 -0.1em;
+    overflow: hidden;
+    padding: 0;
+    width: 1px;
+}

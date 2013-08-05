@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <theme href="index.html" css:if-content="#visual-portal-wrapper" />
+
+  <!--Plone.app.toolbar-->
+  <!--append theme="/html/body" content="//div[@data-iframe='toolbar']" /-->
+
+  <!-- Plone stuff -->
+  <copy css:content="html" css:theme="html" attributes="lang dir" />
+  <drop css:theme="meta, title" />
+  <before css:content-children="head" css:theme-children="head" />
+  <copy attributes="*" css:content="body" css:theme="body" />
+
+  <!-- Content -->
+  <replace css:content="#portal-columns" css:theme="#portal-columns" />
+
+  <!-- Viewlets -->
+  <replace css:content="#portal-personaltools" css:theme="#portal-personaltools" />
+  <drop css:content=".searchSection" />
+  <drop content="//div[@id='searchGadget']/attribute::id" />
+  <drop content="//div[@id='livesearch0']/attribute::id" />
+  <replace css:content="#portal-searchbox" css:theme="#portal-searchbox, #footer-searchbox" />
+  <copy attributes="href title" css:content="#portal-logo" css:theme="#portal-logo" />
+  <replace css:content="#portal-globalnav" css:theme-children="#portal-globalnav" />
+
+  <drop css:content="h1.documentFirstHeading" css:if-content=".template-contentpanels_view" />
+
+  <after css:content="#visual-portal-wrapper .row:last-child script" css:theme="head script:last-child" />
+
+  <replace css:content="#portal-header p.hiddenStructure" css:theme-children="#accessibility" />
+  <replace css:content="#portal-globalnav li" css:theme-children="#portal-globalnav ul" />
+
+</rules>

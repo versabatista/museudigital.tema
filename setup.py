@@ -41,6 +41,8 @@ setup(
         'Pillow',
         'Plone',
         'plone.api',
+        'plone.app.theming',
+        'plone.app.themingplugins',
         'setuptools',
         'z3c.jbot',
     ],
