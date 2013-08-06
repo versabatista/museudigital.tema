@@ -6,9 +6,6 @@
 
   <theme href="index.html" css:if-content="#visual-portal-wrapper" />
 
-  <!--Plone.app.toolbar-->
-  <!--append theme="/html/body" content="//div[@data-iframe='toolbar']" /-->
-
   <!-- Plone stuff -->
   <copy css:content="html" css:theme="html" attributes="lang dir" />
   <drop css:theme="meta, title" />
@@ -19,19 +16,12 @@
   <replace css:content="#portal-columns" css:theme="#portal-columns" />
 
   <!-- Viewlets -->
-  <replace css:content="#portal-personaltools" css:theme="#portal-personaltools" />
+  <before css:content="#portal-personaltools" css:theme-children="#portal-header" />
   <drop css:content=".searchSection" />
-  <drop content="//div[@id='searchGadget']/attribute::id" />
-  <drop content="//div[@id='livesearch0']/attribute::id" />
-  <replace css:content="#portal-searchbox" css:theme="#portal-searchbox, #footer-searchbox" />
-  <copy attributes="href title" css:content="#portal-logo" css:theme="#portal-logo" />
-  <replace css:content="#portal-globalnav" css:theme-children="#portal-globalnav" />
-
-  <drop css:content="h1.documentFirstHeading" css:if-content=".template-contentpanels_view" />
-
+  <drop content="//input[@id='searchGadget']/attribute::id" />
+  <replace css:content-children="#portal-searchbox" css:theme-children="#portal-searchbox, #footer-searchbox" />
+  <copy attributes="href title alt" css:content="#portal-logo" css:theme="#portal-logo" />
+  <replace css:content-children="#portal-globalnav" css:theme-children="#globalnav" />
   <after css:content="#visual-portal-wrapper .row:last-child script" css:theme="head script:last-child" />
-
-  <replace css:content="#portal-header p.hiddenStructure" css:theme-children="#accessibility" />
-  <replace css:content="#portal-globalnav li" css:theme-children="#portal-globalnav ul" />
 
 </rules>
